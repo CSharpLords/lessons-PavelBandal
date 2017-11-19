@@ -6,13 +6,19 @@ using System.Text;
 namespace Summator {
     class Program {
         static void Main(string[] args) {
+            int sum = 0;
             while (true) {
-                int sum = 0;
                 Console.WriteLine("Введите число");
 
+
                 int number = int.Parse(Console.ReadLine());
-                Console.WriteLine("Сумма всех чисел: " + (sum + number));
-                Console.WriteLine();
+                sum = sum + number;
+                Console.WriteLine("Сумма всех чисел: "+sum );
+
+                
+       
+                
+
             }
         }
     }
