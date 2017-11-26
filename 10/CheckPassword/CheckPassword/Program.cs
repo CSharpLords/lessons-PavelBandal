@@ -6,26 +6,33 @@ using System.Threading.Tasks;
 
 namespace CheckPassword {
 	class Program {
-		static void Main(string[] args) {
-			string password = "Супер пароль!";
-            while (true) {
+        static void Main(string[] args)
+        {
+            string password = "Супер пароль!";
+            int a = 0;
+            while (a < 6)
+           
+            {
                 Console.WriteLine("Чтобы пользоваться моей программой, введи пароль!");
                 string answer = Console.ReadLine();
 
-                if (answer == password) {
+                if (answer == password)
+                {
                     Console.WriteLine("Ок, правильно. Жми Enter, чтобы пройти!");
                     Console.ReadLine();
                     Console.Clear();
 
                     StartProgram();
                 }
-                else {
+                else
+                {
                     Console.WriteLine("Неправильно! Хаха, ты не пройдешь!");
-                    Console.ReadLine();
-                    Environment.Exit(0);
+                    a = a + 1;
+                    
                 }
             }
-		}
+        }
+        
 
 		static void StartProgram() {
 			Quest quest = new Quest();
