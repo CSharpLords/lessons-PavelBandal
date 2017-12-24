@@ -15,7 +15,7 @@ namespace CarLine {
 		private Image img;
 
 		private int carX = 500;
-		private int speed = 5;
+		private int speed = 10;
 		public Form1() {
 			InitializeComponent();
 
