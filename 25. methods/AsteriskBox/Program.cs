@@ -1,10 +1,36 @@
 ﻿using System;
 
-namespace AsteriskBox {
-	class Program {
-		static void Main(string[] args) {
-			PrintAsteriskBox(20, 10);
-			Console.ReadLine();
-		}
-	}
+namespace PashaAsteriskLine
+{
+
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            PrintAsteriskBox(3, 2);
+
+            Console.ReadLine(); ;
+
+        }
+
+        static void PrintAsterisks(int a)
+        {
+            string star = "";
+            for (int n = 0; n < a; n++)
+            {
+                star = star + "*";
+            }
+            Console.WriteLine(star);
+
+         }
+        static void PrintAsteriskBox(int shirina, int visota)
+        {
+            for(int i = 0;i < visota; i++)
+            {
+                PrintAsterisks(shirina);
+            }
+        }
+    }
 }
