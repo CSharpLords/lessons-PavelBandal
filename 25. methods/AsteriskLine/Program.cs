@@ -19,16 +19,12 @@ namespace PashaAsteriskLine
         {
 
             string star = "";
-            
+            for (int n = 0; n < a; n++)
+            {
+                star = star + "*";
+            }
 
-
-                
-                for (int n = 0; n < a; n++)
-                {
-                    star = star + "*";
-                }
-
-                Console.WriteLine(star);
+            Console.WriteLine(star);
 
         }
 
