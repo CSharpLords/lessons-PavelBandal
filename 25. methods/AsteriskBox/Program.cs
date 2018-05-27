@@ -9,9 +9,9 @@ namespace PashaAsteriskLine
         static void Main(string[] args)
         {
 
-            PrintAsteriskBox(3, 2);
+            PrintAsteriskBox(4, 5);
 
-            Console.ReadLine(); ;
+            Console.ReadLine(); 
 
         }
 
